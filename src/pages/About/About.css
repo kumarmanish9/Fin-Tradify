@@ -33,38 +33,42 @@
   gap: 10px;
 }
 
-/* Right side */
-.about-image-box {
-  position: relative;
-  text-align: center;
-}
+/* Right */
+.about-image-box img {
+  width: 100%;
+  border-radius: 10px;
 
+  animation: floatImage 3s ease-in-out infinite;
+}
 .about-image-box img {
   width: 100%;
   border-radius: 10px;
 }
 
-/* Badge */
+/* BADGE */
 .about-badge {
   position: absolute;
-  top: -20px;
-  left: 50%;
-  transform: translateX(-50%);
+  top: -120px;       /* slightly above */
+  right: 465px;      /* 🔥 move to right side */
   background: #0d6efd;
   color: white;
-  padding: 15px 20px;
+  padding: 15px 25px;
   border-radius: 10px;
   text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  z-index: 999;
 }
-
-.about-badge h4 {
-  margin: 0;
+.about-right {
+  position: relative;
 }
-
-.about-badge p {
-  margin: 0;
-}
-
-.about-badge small {
-  font-size: 12px;
+@keyframes floatImage {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(15px);  /* 🔥 move down */
+  }
+  100% {
+    transform: translateY(0px);   /* 🔥 back up */
+  }
 }

@@ -1,4 +1,4 @@
-import aboutImg from "../assets/about.png"; // add image here
+import aboutImg from "../assets/about.png";
 import "./About.css";
 import { FaSearch, FaBullhorn, FaFacebookF, FaEnvelope, FaEdit } from "react-icons/fa";
 
@@ -7,8 +7,8 @@ function About() {
     <div className="about-section">
       <div className="container">
         <div className="row align-items-center">
- 
-          {/* LEFT SIDE */}
+
+          {/* LEFT */}
           <div className="col-md-6">
             <p className="about-small">WHAT WE DO</p>
 
@@ -23,7 +23,6 @@ function About() {
               generate leads, and maximize ROI.
             </p>
 
-            {/* FEATURES */}
             <div className="about-features">
               <p><FaSearch /> Search Engine Optimization (SEO)</p>
               <p><FaBullhorn /> Pay Per Click (Google Ads / Meta Ads)</p>
@@ -33,19 +32,17 @@ function About() {
             </div>
           </div>
 
-          {/* RIGHT SIDE */}
-          <div className="col-md-6">
-            <div className="about-image-box">
-              <img src={aboutImg} alt="about" />
-
-              {/* Floating badge */}
-              <div className="about-badge">
-                <h4>10+</h4>
-                <p>Years</p>
-                <small>Of IT Excellence</small>
-              </div>
-            </div>
-          </div>
+          {/* RIGHT */}
+          <div className="col-md-6 about-right">
+          <div className="about-image-box">
+          <img src={aboutImg} alt="about" />
+          <div className="about-badge">
+           <h4>10+</h4>
+            <p>Years</p>
+             <small>Of IT Excellence</small>
+           </div>
+        </div>
+     </div>
 
         </div>
       </div>
