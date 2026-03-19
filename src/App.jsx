@@ -1,8 +1,15 @@
-import Navbar from "./Components/Navbar";
+
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import ServicesCards from "./components/ServicesCards";
 function App() {
   return (
     <>
       <Navbar />
+      <Hero />
+      <About />
+  
     </>
   );
 }

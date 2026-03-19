@@ -1,6 +1,7 @@
 import React from "react";
+import logo from "../assets/FinTradify.png";
+import "./Navbar.css";
  
-import Navbar from "./components/Navbar";
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg bg-light shadow-sm py-3">
@@ -12,9 +13,9 @@ function Navbar() {
          <img
           src={logo}
           alt="logo"
-          style={{ width: "40px", height: "40px", marginRight: "10px" }}
+          style={{ width: "50px", height: "50px", marginRight: "10px" }}
          />
-  <span className="fw-bold text-primary">FIN TRADIFY</span>
+  <span className="fw-bold text-primary"></span>
 </a>
 
         {/* TOGGLE BUTTON (Mobile) */}

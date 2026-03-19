@@ -1,0 +1,70 @@
+.about-section {
+  padding: 80px 0;
+  background: #f7f9fc;
+}
+
+.about-small {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.about-heading {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.about-heading span {
+  color: #0d6efd;
+}
+
+.about-text {
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.about-features p {
+  margin-bottom: 10px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Right side */
+.about-image-box {
+  position: relative;
+  text-align: center;
+}
+
+.about-image-box img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Badge */
+.about-badge {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #0d6efd;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.about-badge h4 {
+  margin: 0;
+}
+
+.about-badge p {
+  margin: 0;
+}
+
+.about-badge small {
+  font-size: 12px;
+}
