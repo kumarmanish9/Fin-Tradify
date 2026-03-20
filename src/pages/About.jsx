@@ -1,53 +1,95 @@
 import aboutImg from "../assets/about.png";
 import "./About.css";
-import { FaSearch, FaBullhorn, FaFacebookF, FaEnvelope, FaEdit } from "react-icons/fa";
+import { FaSearch, FaChartLine, FaShieldAlt, FaRocket, FaUsers, FaGlobe } from "react-icons/fa";
 
-function About() {
+const About = () => {
   return (
-    <div className="about-section">
+    <section className="about-section" aria-labelledby="about-title">
       <div className="container">
-        <div className="row align-items-center">
+        <div className="about-grid">
+          {/* Content */}
+          <div className="about-content">
+            <header className="about-header">
+              <span className="about-badge-small" role="img" aria-label="Trusted Excellence">⭐</span>
+              <p className="about-subtitle">WHO WE ARE</p>
+              <h1 id="about-title" className="about-title">
+                FinTradify: Revolutionizing <span className="accent">Financial Trading</span>
+              </h1>
+            </header>
 
-          {/* LEFT */}
-          <div className="col-md-6">
-            <p className="about-small">WHAT WE DO</p>
-
-            <h2 className="about-heading">
-              <span>Powerful Digital Marketing</span> for <br />
-              Business Growth
-            </h2>
-
-            <p className="about-text">
-              We provide complete <b>digital marketing solutions</b> to help brands grow online.
-              From SEO to social media, ads to content — our strategies are designed to boost visibility,
-              generate leads, and maximize ROI.
+            <p className="about-description">
+              FinTradify is your premier fintech platform for intelligent trading solutions. 
+              We combine cutting-edge AI algorithms, real-time market analytics, and enterprise-grade security 
+              to empower traders with tools that deliver consistent results in volatile markets.
             </p>
 
-            <div className="about-features">
-              <p><FaSearch /> Search Engine Optimization (SEO)</p>
-              <p><FaBullhorn /> Pay Per Click (Google Ads / Meta Ads)</p>
-              <p><FaFacebookF /> Social Media Marketing</p>
-              <p><FaEnvelope /> Email & WhatsApp Marketing</p>
-              <p><FaEdit /> Content & Influencer Marketing</p>
+            <div className="about-features-grid">
+              <div className="feature-card">
+                <FaSearch className="feature-icon" />
+                <h3>AI-Powered Analytics</h3>
+                <p>Advanced market predictions with 95% accuracy using machine learning.</p>
+              </div>
+              <div className="feature-card">
+                <FaChartLine className="feature-icon" />
+                <h3>Real-Time Trading</h3>
+                <p>Execute trades instantly across 50+ global exchanges with zero latency.</p>
+              </div>
+              <div className="feature-card">
+                <FaShieldAlt className="feature-icon" />
+                <h3>Bank-Grade Security</h3>
+                <p>2FA, cold storage, and $100M insurance protect your assets 24/7.</p>
+              </div>
+              <div className="feature-card">
+                <FaRocket className="feature-icon" />
+                <h3>Smart Automation</h3>
+                <p>Copy successful traders or deploy custom algo-strategies effortlessly.</p>
+              </div>
+              <div className="feature-card">
+                <FaUsers className="feature-icon" />
+                <h3>Elite Community</h3>
+                <p>Join 500K+ active traders sharing signals and strategies daily.</p>
+              </div>
+              <div className="feature-card">
+                <FaGlobe className="feature-icon" />
+                <h3>Global Access</h3>
+                <p>Trade crypto, forex, stocks from any device, anywhere in the world.</p>
+              </div>
+            </div>
+
+            <div className="about-stats">
+              <div className="stat">
+                <span className="stat-number">500K+</span>
+                <span className="stat-label">Active Traders</span>
+              </div>
+              <div className="stat">
+                <span className="stat-number">$2.5B+</span>
+                <span className="stat-label">Monthly Volume</span>
+              </div>
+              <div className="stat">
+                <span className="stat-number">99.99%</span>
+                <span className="stat-label">Uptime</span>
+              </div>
             </div>
           </div>
 
-          {/* RIGHT */}
-          <div className="col-md-6 about-right">
-          <div className="about-image-box">
-          <img src={aboutImg} alt="about" />
-          <div className="about-badge">
-           <h4>10+</h4>
-            <p>Years</p>
-             <small>Of IT Excellence</small>
-           </div>
-        </div>
-     </div>
-
+          {/* Image */}
+          <div className="about-image-wrapper">
+            <div className="about-image-container">
+              <img src={aboutImg} alt="FinTradify trading platform dashboard" className="about-image" loading="lazy" />
+              <div className="experience-badge">
+                <div className="badge-circle">10+</div>
+                <div className="badge-text">
+                  <strong>Years</strong>
+                  <span>Fintech Excellence</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
-}
+};
 
 export default About;
+

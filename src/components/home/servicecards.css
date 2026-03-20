@@ -1,0 +1,32 @@
+.services-section {
+  margin-top: 60px;
+}
+
+/* Card */
+.service-card {
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+/* Hover effect */
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Icon */
+.service-card .icon {
+  font-size: 30px;
+  color: #0d6efd;
+  margin-bottom: 10px;
+}
+
+/* Title */
+.service-card h6 {
+  font-weight: 600;
+  margin-top: 10px;
+}
